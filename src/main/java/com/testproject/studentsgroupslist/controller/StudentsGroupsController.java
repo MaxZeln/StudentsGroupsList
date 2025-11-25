@@ -1,6 +1,5 @@
 package com.testproject.studentsgroupslist.controller;
 
-import com.testproject.studentsgroupslist.model.dto.StudentDto;
 import com.testproject.studentsgroupslist.model.dto.StudentsGroupDto;
 import com.testproject.studentsgroupslist.service.StudentsGroupService;
 import lombok.RequiredArgsConstructor;
@@ -24,13 +23,12 @@ public class StudentsGroupsController {
 
     @GetMapping("/get_students_group_by_group_number")
     public StudentsGroupDto getStudentsGroupByGroupNumber(@RequestParam String groupNumber) {
-         return studentsGroupService.findByGroupNumber(groupNumber);
+        return studentsGroupService.findByGroupNumber(groupNumber);
     }
 
     @GetMapping("/get_all_students_groups")
     public List<StudentsGroupDto> getAllStudentsGroups() {
         return studentsGroupService.getAllStudentsGroups();
     }
-
 
 }

@@ -12,4 +12,5 @@ public interface StudentsGroupRepository extends JpaRepository<StudentsGroup, In
     boolean existsByGroupNumber(String groupNumber);
 
     void deleteByGroupNumber(String groupNumber);
+
 }

@@ -3,7 +3,10 @@ package com.testproject.studentsgroupslist.mapper;
 import com.testproject.studentsgroupslist.model.dto.StudentDto;
 import com.testproject.studentsgroupslist.model.entity.Student;
 import com.testproject.studentsgroupslist.service.StudentsGroupService;
-import org.mapstruct.*;
+import org.mapstruct.BeforeMapping;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+import org.mapstruct.MappingTarget;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

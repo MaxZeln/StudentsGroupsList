@@ -1,10 +1,7 @@
 package com.testproject.studentsgroupslist.service;
 
-import com.testproject.studentsgroupslist.mapper.StudentMapper;
 import com.testproject.studentsgroupslist.mapper.StudentsGroupMapper;
-import com.testproject.studentsgroupslist.model.dto.StudentDto;
 import com.testproject.studentsgroupslist.model.dto.StudentsGroupDto;
-import com.testproject.studentsgroupslist.repository.StudentRepository;
 import com.testproject.studentsgroupslist.repository.StudentsGroupRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +18,7 @@ public class StudentsGroupService {
     private final StudentsGroupMapper studentsGroupMapper;
 
     public List<StudentsGroupDto> getAllStudentsGroups() {
-        List<StudentsGroupDto> dtos = studentsGroupMapper.toDtos( studentsGroupRepository.findAll());
+        List<StudentsGroupDto> dtos = studentsGroupMapper.toDtos(studentsGroupRepository.findAll());
         log.debug("Found student group: {}", dtos);
         return dtos;
     }

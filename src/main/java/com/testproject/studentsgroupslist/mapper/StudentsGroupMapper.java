@@ -17,7 +17,7 @@ public abstract class StudentsGroupMapper {
     private UtilService utilService;
 
     @Autowired
-    protected void setUtilService( UtilService utilService) {
+    protected void setUtilService(UtilService utilService) {
         this.utilService = utilService;
     }
 
@@ -34,8 +34,6 @@ public abstract class StudentsGroupMapper {
     public abstract List<StudentsGroupDto> toDtos(List<StudentsGroup> studentsGroups);
 
     public abstract List<StudentsGroup> toEntitys(List<StudentsGroupDto> studentsGroupDtos);
-
-
 
 }
 

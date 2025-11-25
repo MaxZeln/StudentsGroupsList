@@ -29,4 +29,5 @@ public class StudentDto {
         return "StudentDto(id=" + this.getId() + ", groupNumber="
                 + this.getGroupNumber() + ", name=" + this.getName() + ")";
     }
+
 }
